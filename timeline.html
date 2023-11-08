@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="scripts.js"></script> -->
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(135deg, #a7a7fa, #d293f1);
+        }
+            .line {
+            width: 5px;
+            height: 100%;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            z-index: -1;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .event {
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s;
+            margin: 10px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #ff6a00, #ff9966);        
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .event:hover {
+            transform: scale(1.085);
+        }
+
+        .event-content {
+            flex: 1;
+            opacity: 1;
+        }
+
+        .event h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .event-date {
+            background: linear-gradient(135deg, #4856e9, #9f44d3);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            opacity: 1;
+        }
+
+        @media (min-width: 768px) {
+            .timeline {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .event {
+                max-width: 300px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .event {
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="line"></div>
+    <div class="timeline">
+        <div class="event">
+            <div class="event-content one">
+                <h2>Birth</h2>
+                <p>I was born in Vizag.</p>
+            </div>
+            <div class="event-date one">2004</div>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="event">
+            <div class="event-content two">
+                <h2>Schooling Started</h2>
+                <p>Started My Educational Journey at Hyderabad</p>
+            </div>
+            <div class="event-date two">2007</div>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="event">
+            <div class="event-content three">
+                <h2>Completed 10<sup>th</sup> Class</h2>
+                <p>Completed 10<sup>th</sup> Class at Sama public School at Kakinada</p>
+            </div>
+            <div class="event-date three">2019</div>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="event">
+            <div class="event-content four">
+                <h2>Completed 12<sup>th</sup> Class</h2>
+                <p>Completed 12<sup>th</sup> Class at Sasi Junior College</p>
+            </div>
+            <div class="event-date four">2021</div>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <div class="event">
+            <div class="event-content five">
+                <h2>Started Graduation</h2>
+                <p>Joined VIT In Data Science</p>
+            </div>
+            <div class="event-date five">2021</div>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <div class="event">
+            <div class="event-content six">
+                <h2>Coding Journey</h2>
+                <p>Started Coding Journey</p>
+            </div>
+            <div class="event-date six">2022</div>
+        </div>
+    </div>
+        <div class="timeline">
+        <div class="event">
+            <div class="event-content seven">
+                <h2>Editing Journey</h2>
+                <p>Started Editing Journey</p>
+            </div>
+            <div class="event-date seven">2023</div>
+        </div>
+    </div>
+</body>
+</html>
